@@ -13,8 +13,11 @@
     </ion-toolbar>
   </ion-header>
   <ion-item>
-    <ion-label position="floating">Introduce un número:</ion-label>
-    <ion-input [NgModel]="number" type="number" >{[numberChosen]}</ion-input>
+    <ion-label position="floating">Introduce un número entre 0 y 9999: </ion-label>
+    <ion-input type="number" [(ngModel)]="numberChosen"></ion-input>
+    <ion-button (click)="compareNumbers(numberChosen)">Adivinar</ion-button>
+    <ion-button (click)="surrender()">Rendirse</ion-button>
+    <ion-text>{{message}}</ion-text>
   </ion-item>
 
 </ion-content>

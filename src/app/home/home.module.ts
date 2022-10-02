@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
@@ -16,10 +16,18 @@ import { HomePageRoutingModule } from './home-routing.module';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {
 
+export class HomePageModule implements OnInit{
+  
   targetNumber:number;
-  numberChosen:number;
+
+  constructor() 
+  {
+    this.targetNumber = 0;
+  }
+  ngOnInit(): void {
+
+  }
 
 
 }
