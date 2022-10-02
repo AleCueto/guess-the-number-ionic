@@ -16,4 +16,10 @@ import { HomePageRoutingModule } from './home-routing.module';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+
+  targetNumber:number;
+  numberChosen:number;
+
+
+}
