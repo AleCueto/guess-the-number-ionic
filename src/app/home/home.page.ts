@@ -34,4 +34,6 @@ export class HomePage {
     this.message = "El número que debías adivinar era el: " + this.targetNumber; 
   }
 
+  
+
 }

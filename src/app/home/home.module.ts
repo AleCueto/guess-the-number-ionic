@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { EmphasisDirective } from './directives/emphasis.directive';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, EmphasisDirective]
 })
 
 export class HomePageModule implements OnInit{
