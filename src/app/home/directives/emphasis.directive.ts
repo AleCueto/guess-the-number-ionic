@@ -22,11 +22,13 @@ export class EmphasisDirective {
   private setGood()
   {
     this.el.nativeElement.style.backgroundColor = "green";
+    this.el.nativeElement.style.color = "white";
   }
   
   private setBad()
   {
-    this.el.nativeElement.style.backgroundColor = "red";
+    this.el.nativeElement.style.backgroundColor = "";
+    this.el.nativeElement.style.color = "black";
   }
 
   
